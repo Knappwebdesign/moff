@@ -1,0 +1,40 @@
+///////////////////////////
+// Color Palette
+///////////////////////////
+
+$red: #CA1F2C;
+$pink: #FD67DF;
+$white: #fff;
+$black: #000;
+$grey: #374140;
+
+///////////////////////////
+// Media Qeuries
+///////////////////////////
+
+//Phone
+$phone: 768px;
+
+//Tablet
+$tablet: 1024px;
+
+//Desktop
+$desktop: 3000px;
+
+//Phone Querie
+@media screen and (max-width: $phone) {
+
+
+}
+
+//Tablet Querie
+@media screen and (min-width: $phone) and (max-width: $tablet) {
+
+
+}
+
+//Desktop Querie
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+
+
+}

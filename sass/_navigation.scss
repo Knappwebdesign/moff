@@ -1,0 +1,78 @@
+@import "_variables.scss";
+/////////////////////////////////
+// Desktop Navigation
+////////////////////////////////
+header .top-menu, .top-menu ul {
+
+   float: right;
+   margin-top: 2%;
+
+   a {
+
+      display: inline-block;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: $grey;
+      text-decoration:none;
+      font-size: 1.3em;
+      -webkit-font-smoothing: antialiased;
+
+   }
+
+   a:hover{
+
+      background-color: $grey;
+      color: $white;
+
+   }
+
+   li {
+
+      float:left;
+      position:relative;
+      line-height: 2em;
+
+   }
+
+   ul {
+
+      position:absolute;
+      display:none;
+      width:12em;
+      top: 2em;
+      margin-top:0;
+
+   }
+
+   li ul a {
+
+      width: 12em;
+      height:auto;
+      float:left;
+
+   }
+
+
+   li ul ul {
+
+      left: 12em;
+      margin:0px 0 0 10px;
+
+   }
+
+   ul ul, li:hover ul ul ul, li:hover ul ul ul ul {
+
+      display: none;
+
+   }
+
+   li:hover ul, li li:hover ul, li li li:hover ul, li li li li:hover ul{
+
+      display: block;
+      top: 100%;
+
+   }
+
+}
